@@ -61,9 +61,9 @@ app.get('/users', async(req, res)=>{
 	  if(users.length > 0)
 		res.sendFile('welcome.html', {root: __dirname })
 	  else
-		res.sendFile('first.html', {root: __dirname })
+		res.sendFile('error.html', {root: __dirname })
   }catch(e){
-	res.sendFile('first.html', {root: __dirname })  
+	res.sendFile('error.html', {root: __dirname })  
   }
 });
 
